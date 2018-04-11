@@ -12,17 +12,13 @@
     }
   }(this, function doublescoreFactory (doublescore) {
 
-    doublescore.render = function (mainString, mainObject, newElementId) {
+    doublescore.render = function (mainString, mainObject) {
 
     
 
-        var htmlDocument = document.getElementById(el);
+        var tagRE;
 
-        var actualHtml = htmlDocument.innerHTML;
-
-        var newHtml = "";
-
-        
+        var newString;
 
         /*
 
@@ -48,11 +44,13 @@
 
         for (var key in mainObject.data) {
 
-            newHtml += actualHTML.replace(/{{something}}/g, mainObject.data[key]["something"]);
+            tagRE = new RegExp(key, 'gi');
+
+            newString = mainString.replace(tagRE, mainObject.data[key]["something"]);
 
         }
 
-        document.getElementById(newElementID).innerHTML = newHtml;
+        return newString;
 
     }
     

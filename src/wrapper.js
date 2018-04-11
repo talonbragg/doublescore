@@ -12,7 +12,7 @@
     }
   }(this, function doublescoreFactory (doublescore) {
 
-    //=require /index.js
+    //=require ./index.js
     
     return doublescore;
   }));

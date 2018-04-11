@@ -1,10 +1,7 @@
-doublescore.render = function (mainString, mainObject, newElementId) {
+doublescore.render = function (mainString, mainObject) {
 
-    var htmlDocument = document.getElementById(el);
-    var actualHtml = htmlDocument.innerHTML;
-    var newHtml = "";
     var tagRE;
-    
+    var newString;
     /*
         Main object should look like:
 
@@ -18,7 +15,7 @@ doublescore.render = function (mainString, mainObject, newElementId) {
 
     for (var key in mainObject.data) {
         tagRE = new RegExp(key, 'gi');
-        newHtml += actualHTML.replace(tagRE, mainObject.data[key]["something"]);
+        newString = mainString.replace(tagRE, mainObject.data[key]["something"]);
     }
-    document.getElementById(newElementID).innerHTML = newHtml;
+    return newString;
 }
