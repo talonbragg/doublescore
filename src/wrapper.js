@@ -12,6 +12,7 @@
     }
   }(this, function doublescoreFactory (doublescore) {
 
-    // doublescore param should be an object
+    //=require /index.js
     
+    return mustache;
   }));
