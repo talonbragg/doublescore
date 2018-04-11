@@ -14,5 +14,5 @@
 
     //=require /index.js
     
-    return mustache;
+    return doublescore;
   }));
