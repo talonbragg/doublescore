@@ -1,1 +1,1 @@
-//Requirements of all files will go here
+//=require template/template.js

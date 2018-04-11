@@ -12,7 +12,49 @@
     }
   }(this, function doublescoreFactory (doublescore) {
 
-    //Requirements of all files will go here
+    doublescore.render = function (mainString, mainObject, newElementId) {
+
     
-    return mustache;
+
+        var htmlDocument = document.getElementById(el);
+
+        var actualHtml = htmlDocument.innerHTML;
+
+        var newHtml = "";
+
+        
+
+        /*
+
+            Main object should look like:
+
+    
+
+            var myObject = {
+
+                el: "#app",
+
+                data: {
+
+    
+
+                }
+
+            }
+
+        */
+
+    
+
+        for (var key in mainObject.data) {
+
+            newHtml += actualHTML.replace(/{{something}}/g, mainObject.data[key]["something"]);
+
+        }
+
+        document.getElementById(newElementID).innerHTML = newHtml;
+
+    }
+    
+    return doublescore;
   }));
