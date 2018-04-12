@@ -7,7 +7,7 @@
     } else if (typeof define === 'function' && define.amd) {
       define(['exports'], factory);
     } else {
-      global.Doublescore = {};
+      global.Doublescore = factory({});
       factory(global.Doublescore); 
     }
   }(this, function doublescoreFactory (doublescore) {
