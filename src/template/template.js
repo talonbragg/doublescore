@@ -1,4 +1,4 @@
-doublescore.render = function (mainString, mainObject) {
+Doublescore.render = function (mainString, mainObject) {
 
     var tagRE;
     var newString;

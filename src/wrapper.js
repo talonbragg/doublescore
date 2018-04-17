@@ -10,9 +10,9 @@
       global.Doublescore = factory({});
       factory(global.Doublescore); 
     }
-  }(this, function doublescoreFactory (doublescore) {
+  }(this, function doublescoreFactory (Doublescore) {
 
     //=require ./index.js
     
-    return doublescore;
+    return Doublescore;
   }));
