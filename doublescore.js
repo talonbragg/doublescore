@@ -10,9 +10,9 @@
       global.Doublescore = factory({});
       factory(global.Doublescore); 
     }
-  }(this, function doublescoreFactory (doublescore) {
+  }(this, function doublescoreFactory (Doublescore) {
 
-    doublescore.render = function (mainString, mainObject) {
+    Doublescore.render = function (mainString, mainObject) {
 
     
 
@@ -54,5 +54,5 @@
 
     }
     
-    return doublescore;
+    return Doublescore;
   }));
